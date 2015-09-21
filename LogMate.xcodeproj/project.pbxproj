@@ -12,7 +12,8 @@
 		7B71C6411BAFAD1300C96D04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B71C63F1BAFAD1300C96D04 /* Main.storyboard */; };
 		7B71C6431BAFAD1300C96D04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B71C6421BAFAD1300C96D04 /* Assets.xcassets */; };
 		7B71C6461BAFAD1300C96D04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B71C6441BAFAD1300C96D04 /* LaunchScreen.storyboard */; };
-		7B71C6511BAFAD1300C96D04 /* LogMateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B71C6501BAFAD1300C96D04 /* LogMateUITests.swift */; };
+		7BEC7AEF1BAFB59300955B10 /* AppDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEC7AEE1BAFB59300955B10 /* AppDelegateTests.swift */; settings = {ASSET_TAGS = (); }; };
+		7BEC7AF41BAFB93200955B10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B71C63B1BAFAD1300C96D04 /* AppDelegate.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +35,9 @@
 		7B71C6451BAFAD1300C96D04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B71C6471BAFAD1300C96D04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B71C64C1BAFAD1300C96D04 /* LogMateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogMateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B71C6501BAFAD1300C96D04 /* LogMateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogMateUITests.swift; sourceTree = "<group>"; };
 		7B71C6521BAFAD1300C96D04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BEC7AEE1BAFB59300955B10 /* AppDelegateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegateTests.swift; sourceTree = "<group>"; };
+		7BEC7AF01BAFB7D300955B10 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		7B71C62F1BAFAD1300C96D04 = {
 			isa = PBXGroup;
 			children = (
+				7BEC7AF21BAFB7DF00955B10 /* Frameworks */,
 				7B71C63A1BAFAD1300C96D04 /* LogMate */,
 				7B71C64F1BAFAD1300C96D04 /* LogMateUITests */,
 				7B71C6391BAFAD1300C96D04 /* Products */,
@@ -90,10 +93,18 @@
 		7B71C64F1BAFAD1300C96D04 /* LogMateUITests */ = {
 			isa = PBXGroup;
 			children = (
-				7B71C6501BAFAD1300C96D04 /* LogMateUITests.swift */,
+				7BEC7AEE1BAFB59300955B10 /* AppDelegateTests.swift */,
 				7B71C6521BAFAD1300C96D04 /* Info.plist */,
 			);
 			path = LogMateUITests;
+			sourceTree = "<group>";
+		};
+		7BEC7AF21BAFB7DF00955B10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BEC7AF01BAFB7D300955B10 /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,7 +216,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B71C6511BAFAD1300C96D04 /* LogMateUITests.swift in Sources */,
+				7BEC7AF41BAFB93200955B10 /* AppDelegate.swift in Sources */,
+				7BEC7AEF1BAFB59300955B10 /* AppDelegateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +399,7 @@
 				7B71C6571BAFAD1300C96D04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B71C6581BAFAD1300C96D04 /* Build configuration list for PBXNativeTarget "LogMateUITests" */ = {
 			isa = XCConfigurationList;
@@ -395,6 +408,7 @@
 				7B71C65A1BAFAD1300C96D04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
